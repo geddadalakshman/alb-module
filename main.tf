@@ -3,7 +3,7 @@ resource "aws_lb" "main" {
   internal           = var.internal
   load_balancer_type = var.load_balancer_type
   enable_deletion_protection = var.enable_deletion_protection
-#  subnets  = var.subnets
+  subnets  = var.subnets
   tags = merge(
     var.tags,
     {
