@@ -1,7 +1,6 @@
-output "public_subnets" {
+output "alb" {
   value = aws_lb.main
 }
 
-#output "private_subnets" {
-#  value = aws_subnet.private_subnets
-#}
+
+
